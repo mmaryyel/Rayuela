@@ -4,22 +4,24 @@
 
 <h1 id="main-title">¡RAYUELA!</h1>
     <button id="start_btn">Jugar</button><br><br>
-    <h2 id="elapsed"></h1>
+    <h2 id="elapsed"></h2>
+    <h2 id="winner"></h2>
 
     <table class="table">
-      <tr id="Player1">
+      <tr id="player1">
         <td><strong>Jugador 1</strong></td>
         <td class="active"></td>
         <% (0..100).each do |n| %>
-          <td></td>
+        
+          <td id=<%= n %>></td>
         <% end %>
       </tr>
 
-      <tr id="Player2">
+      <tr id="player2">
         <td><strong>Jugador 2</strong></td>
         <td class="active"></td>
         <% (0..100).each do |n| %>
-          <td></td>
+          <td id=<%= n %>></td>
         <% end %>
       </tr>
 </table>
